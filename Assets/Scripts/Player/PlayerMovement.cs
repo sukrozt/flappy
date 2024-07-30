@@ -28,10 +28,10 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("fly", Input.GetKey(KeyCode.Space));
     }
 
-    private void OnCollisionEnter2D(Collider2D collision){
+    private void OnCollisionEnter2D(Collision2D collision){
         
-        birdIsAlive = false;
         logic.gameOver();
+        birdIsAlive = false;
 
     }
 }
